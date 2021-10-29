@@ -1,38 +1,3 @@
-" Vim syntax file
-" Language: C++ Additions
-" Maintainer: Jon Haggblad <jon@haeggblad.com>
-" URL: http://www.haeggblad.com
-" Last Change: 29 Jun 2019
-" Version: 0.6
-" Changelog:
-"   0.1 - initial version.
-"   0.2 - C++14
-"   0.3 - Incorporate lastest changes from Mizuchi/STL-Syntax
-"   0.4 - Add template function highlight
-"   0.5 - Redo template function highlight to be more robust. Add options.
-"   0.6 - more C++14, C++17, library concepts
-"
-" Additional Vim syntax highlighting for C++ (including C++11/14/17)
-"
-" This file contains additional syntax highlighting that I use for C++11/14
-" development in Vim. Compared to the standard syntax highlighting for C++ it
-" adds highlighting of (user defined) functions and the containers and types
-" in the standard library / boost.
-"
-" Based on:
-"   http://stackoverflow.com/q/736701
-"   http://www.vim.org/scripts/script.php?script_id=4293
-"   http://www.vim.org/scripts/script.php?script_id=2224
-"   http://www.vim.org/scripts/script.php?script_id=1640
-"   http://www.vim.org/scripts/script.php?script_id=3064
-
-
-" -----------------------------------------------------------------------------
-"  Highlight Class and Function names.
-"
-" Based on the discussion in: http://stackoverflow.com/q/736701
-" -----------------------------------------------------------------------------
-
 " Functions
 if !exists('g:cpp_no_function_highlight')
     syn match   cCustomParen    transparent "(" contains=cParen contains=cCppParen
